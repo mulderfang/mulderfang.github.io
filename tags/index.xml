@@ -6,22 +6,8 @@
     <description>Recent content in Tags on 雞笑恐龍</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mulderfang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>台指期</title>
-      <link>https://mulderfang.github.io/tags/%E5%8F%B0%E6%8C%87%E6%9C%9F/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/%E5%8F%B0%E6%8C%87%E6%9C%9F/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>波段</title>
-      <link>https://mulderfang.github.io/tags/%E6%B3%A2%E6%AE%B5/</link>
-      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/%E6%B3%A2%E6%AE%B5/</guid>
-      <description></description>
-    </item>
     <item>
       <title>事件交易</title>
       <link>https://mulderfang.github.io/tags/%E4%BA%8B%E4%BB%B6%E4%BA%A4%E6%98%93/</link>
@@ -51,38 +37,24 @@
       <description></description>
     </item>
     <item>
-      <title>Game</title>
-      <link>https://mulderfang.github.io/tags/game/</link>
+      <title>Relative Strength</title>
+      <link>https://mulderfang.github.io/tags/relative-strength/</link>
       <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/game/</guid>
+      <guid>https://mulderfang.github.io/tags/relative-strength/</guid>
       <description></description>
     </item>
     <item>
-      <title>HTML</title>
-      <link>https://mulderfang.github.io/tags/html/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/html/</guid>
+      <title>台指期</title>
+      <link>https://mulderfang.github.io/tags/%E5%8F%B0%E6%8C%87%E6%9C%9F/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mulderfang.github.io/tags/%E5%8F%B0%E6%8C%87%E6%9C%9F/</guid>
       <description></description>
     </item>
     <item>
-      <title>New</title>
-      <link>https://mulderfang.github.io/tags/new/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/new/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Photos</title>
-      <link>https://mulderfang.github.io/tags/photos/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/photos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://mulderfang.github.io/tags/python/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/tags/python/</guid>
+      <title>波段</title>
+      <link>https://mulderfang.github.io/tags/%E6%B3%A2%E6%AE%B5/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://mulderfang.github.io/tags/%E6%B3%A2%E6%AE%B5/</guid>
       <description></description>
     </item>
   </channel>
