@@ -141,29 +141,33 @@
         <img src="https://mulderfang.github.io/images/featured-post/post-1.png" class="img-fluid w-100 mb-4" alt="剛上市櫃股票">
         
         <div class="content mb-5">
-          <h4 id="回測條件">回測條件</h4>
+          <!-- raw HTML omitted -->
+<h5 id="一-策略發想">(一) 策略發想</h5>
+<p>不管是<strong>直接上市櫃</strong>還是<strong>興櫃轉上市</strong>，前五天皆無一般台股的漲跌幅限制。所以時常有新聞所謂的<strong>蜜月行情</strong>，意氣風發上市後假設跌到爛掉想必公司對投資人不好交代，因此剛上市櫃試著站在買方試試看。
+不過實際狀況還是要看承銷商的力道夠不夠，以及上市時的市場氛圍。</p>
+<!-- raw HTML omitted -->
+<h5 id="二-回測條件">(二) 回測條件</h5>
 <ol>
 <li>回測時間：2020年6月到2024年10月</li>
 <li>回測股票：新上市櫃股票</li>
 </ol>
 <!-- raw HTML omitted -->
-<h4 id="策略發法">策略發法</h4>
-<p>不管是<strong>直接上市櫃</strong>還是<strong>興櫃轉上市</strong>，前五天皆無一般台股的漲跌幅限制。所以時常有新聞所謂的<strong>蜜月行情</strong>，意氣風發上市後假設跌到爛掉想必公司對投資人不好交代，因此剛上市櫃試著站在買方試試看。
-不過實際狀況還是要看承銷商的力道夠不夠，以及上市時的市場氛圍。</p>
-<!-- raw HTML omitted -->
-<h5 id="統計資料介紹">統計資料介紹</h5>
+<h5 id="三-統計資料介紹">(三) 統計資料介紹</h5>
 <p>手邊資料第一次買進(2021-01-08)到截至目前統計(2024-10-09)，總共156筆交易，排除幾支無流動性股票(開盤即收盤的幾支股票)</p>
 <ul>
 <li>持有股票的天數為728天</li>
 <li>總天數910天</li>
 <li>持有時間佔比80%</li>
 <li>最多會同時持倉8檔股票</li>
-<li>平持倉均落在2.57檔。
+<li>平持倉均落在2.57檔。</li>
+<li>每日持倉股票數如下圖
 <img src="../../images/post/post-1-1.png" alt="image"></li>
 </ul>
-<h5 id="回測結果">回測結果</h5>
-<p><strong>買進賣出 : 上市第一天開盤即買進，抱到第13天收盤賣出。</strong></p>
+<h5 id="四-回測結果">(四) 回測結果</h5>
+<p><strong>買進 : 上市第一天開盤即買進</strong></p>
+<p><strong>賣出 : 抱到第13天收盤賣出</strong></p>
 <p>回測上市櫃後單純持有特定天數(3~20天)結果，可以發現單純持有13天效果最好，總報酬率可以到659.56%，代表此策略確實有可用之處，但因為此策略沒有設定停損，有可能造成一次性鉅額的MDD(Max drawdown)，因此需要後續優化。</p>
+<p>*註：總報酬率計算方式僅將所有股票報酬率相加，尚未考慮資金使用效率</p>
 <table>
   <thead>
       <tr>
@@ -218,15 +222,27 @@
           <td>156</td>
           <td>595.73%</td>
       </tr>
-      <tr>
-          <td>16</td>
-          <td>155</td>
-          <td>568.05%</td>
-      </tr>
   </tbody>
 </table>
-<h5 id="優化策略">優化策略</h5>
-<p>停損抓開盤價，若未觸及停損價及續抱</p>
+<h5 id="五-優化策略">(五) 優化策略</h5>
+<p><strong>買進 : 上市第一天開盤即買進</strong></p>
+<p><strong>賣出停利 : 抱到第8天收盤賣出</strong></p>
+<p><strong>賣出停損 : 第一天收黑 或 第二天收盤跌破第一天紅K一半 或 跌破第一天開盤價</strong></p>
+<ul>
+<li>上市第一天收黑(共66筆)</li>
+</ul>
+<p>如果連第一天開盤都收黑的話，代表中籤後賣壓沉重，買盤也不夠積極，可能承銷商的態度也沒有很積極地做多，因此若第一天收黑K推測後續幾天表現也不好。</p>
+<p>根據數據顯示若第一天收黑，最後賣出日(持有8天)，平均每檔會虧損-6.72%。</p>
+<p>不過因為剛上市股多半禁止當沖，只能隔天早上停損，但就算如此，每檔的停損虧損仍可下降到-4.7%。且也不需要持有至到八天，提前釋放資金。</p>
+<ul>
+<li>第二天收盤跌破第一天紅K的一半(共47筆)</li>
+</ul>
+<p>短波段期待能在短時間有漲勢的延續性，因此若第二天收盤跌破第一天紅K的一半(概念是跌破第一天持有者的平均成本價)，也停損/停利賣出。
+一樣根據數據，至最後賣出日(持有8天)平均每檔會虧損-2.51%下降至-1.54%。</p>
+<ul>
+<li>調整後數據
+以下為調整後持有天數宇總報酬率圖</li>
+</ul>
 <table>
   <thead>
       <tr>
@@ -237,115 +253,85 @@
   </thead>
   <tbody>
       <tr>
-          <td>5</td>
-          <td>161</td>
-          <td>481.71%</td>
-      </tr>
-      <tr>
-          <td>6</td>
+          <td>7</td>
           <td>161</td>
           <td>593.52%</td>
       </tr>
       <tr>
-          <td>7</td>
-          <td>160</td>
-          <td><strong>641.91%</strong></td>
-      </tr>
-      <tr>
           <td>8</td>
-          <td>159</td>
-          <td>602.97%</td>
+          <td>161</td>
+          <td><strong>638.74%</strong></td>
       </tr>
       <tr>
           <td>9</td>
-          <td>159</td>
-          <td>555.13%</td>
+          <td>161</td>
+          <td>593.22%</td>
       </tr>
       <tr>
           <td>10</td>
-          <td>159</td>
-          <td>576.51%</td>
+          <td>161</td>
+          <td>545.38%</td>
       </tr>
       <tr>
           <td>11</td>
-          <td>158</td>
-          <td>595.49%</td>
+          <td>160</td>
+          <td>569.93%</td>
       </tr>
       <tr>
           <td>12</td>
-          <td>156</td>
-          <td>606.80%</td>
+          <td>159</td>
+          <td>589.38%</td>
       </tr>
       <tr>
           <td>13</td>
-          <td>156</td>
-          <td>611.22%</td>
+          <td>159</td>
+          <td>590.31%</td>
       </tr>
       <tr>
           <td>14</td>
-          <td>156</td>
-          <td>557.61%</td>
+          <td>159</td>
+          <td>594.72%</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td>158</td>
+          <td>547.22%</td>
       </tr>
   </tbody>
 </table>
-<!-- raw HTML omitted -->
-<h5 id="link">Link</h5>
-<p>可以透過以下網站追蹤目前即將上市櫃股票 <a href="https://concords.moneydj.com/z/zu/zue/zuea/zueab/zueab.djhtm">即將上市櫃個股</a></p>
-<!-- raw HTML omitted -->
-<h5 id="list">List</h5>
+<p>可以發現有停損與沒停損，停利的持有天數從13天大幅縮短為7天，但總報酬率卻沒有下降太多(僅下降3.25%)，計算平均持有天數只有2.61天</p>
+<h5 id="六-重新統計資料">(六) 重新統計資料</h5>
+<ul>
+<li>持有股票的天數為313天</li>
+<li>總天數910天</li>
+<li>持有時間佔比34.4%</li>
+<li>最多會同時持倉5檔股票</li>
+<li>平持倉均落在1.35檔。</li>
+<li>每日持倉股票數如下圖
+<img src="../../images/post/post-1-2.png" alt="image"></li>
+</ul>
+<h5 id="七-現實考量">(七) 現實考量</h5>
 <ol>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>胃納量問題</li>
 </ol>
+<p>剛上市櫃的新股票流動性不像一般已經上市櫃股票的流動性這麼好，會有胃納量問題，就算想買在開盤價或附近，也可能因為賣出人數不多，無法加大持股，因此這個策略會有資金胃納量問題，就算整體的報酬率很好，也可能因為資金整體投資部位不高導致報酬率被稀釋。</p>
+<ol start="2">
+<li>開盤價震盪</li>
+</ol>
+<p>嘗試執行幾次發現開盤後往往震盪過大，如果沒有第一盤掛到，有時候會一路往上進攻，導致害怕買不到而追高，造成成本被墊高的情況發生，若每檔成本都被墊高1%，其實也會大幅影響此策略績效。</p>
+<ol start="3">
+<li>無漲跌幅限制且禁當沖</li>
+</ol>
+<p>因為剛上市櫃股有蜜月行情，無漲跌幅限制也無法當沖，這也就表示如果買進後持續下跌，無法及時停損，若買進部位過大可能造成一次交易賠光之前獲利的情況發生，因此為求風險控制只能小量進場，這也呼應第一點，此策略無法大量買進，就算績效卓越也可能佔整體交易部位的少部分。</p>
+<ol start="4">
+<li>資金效益</li>
+</ol>
+<p>因為此策略屬於事件交易，若無上市櫃時就會有資金閒置的問題，需另外找地方孳息。</p>
+<h5 id="八-結論">(八) 結論</h5>
+<p>雖然此策略的胃納量不大，但期望值來說確實還不錯，勝率33.54%，平均勝利時收益率19.70(%)，平均失敗時損失率-3.97(%)，是當下資金分配決定是否操作，整體來說是個不錯的事件交易選擇。</p>
 <!-- raw HTML omitted -->
-<h5 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h5>
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python syntax highlighting&#34;</span>
-</span></span><span style="display:flex;"><span>print s
-</span></span></code></pre></div><pre tabindex="0"><code>No language indicated, so no syntax highlighting.
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre><!-- raw HTML omitted -->
-<h5 id="blockquote">Blockquote</h5>
-<blockquote>
-<p>This is a blockquote example.</p>
-</blockquote>
-<!-- raw HTML omitted -->
-<h5 id="inline-html">Inline HTML</h5>
-<p>You can also use raw HTML in your Markdown, and it&rsquo;ll mostly work pretty well.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="tables">Tables</h5>
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don&rsquo;t need to make the
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Markdown</th>
-          <th>Less</th>
-          <th>Pretty</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><em>Still</em></td>
-          <td><code>renders</code></td>
-          <td><strong>nicely</strong></td>
-      </tr>
-      <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-      </tr>
-  </tbody>
-</table>
-<!-- raw HTML omitted -->
+<h5 id="九-連結">(九) 連結</h5>
+<p>可以透過以下網站追蹤目前即將上市櫃股票 <a href="https://concords.moneydj.com/z/zu/zue/zuea/zueab/zueab.djhtm">即將上市櫃個股</a></p>
 <!-- raw HTML omitted -->
 
         </div>
