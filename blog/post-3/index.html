@@ -154,120 +154,55 @@
 <!-- raw HTML omitted -->
 <h5 id="三-回測績效">(三) 回測績效</h5>
 <h6 id="1-跟單小外資">1. 跟單小外資</h6>
-<p>盤後籌碼呈現小外資買進，隔天開盤就買，小外資賣出，隔天開盤就賣</p>
+<p>盤後籌碼呈現小外資買進，隔天開盤就買，小外資賣出，隔天開盤就賣，做空亦然</p>
 <p>同時間點 :</p>
 <ul>
-<li>大盤累積獲利:8755</li>
-<li>外資小兒法累積:8895</li>
-<li>進出次數:37</li>
-<li>第一次買進時間:2022-07-05</li>
+<li>大盤累積獲利:6086</li>
+<li>策略一累積:12045</li>
+<li>進出次數:71</li>
+<li>第一次買進時間:2021-09-22</li>
 <li>最後一次賣出時間:2024-10-16</li>
 </ul>
-<p>比較同期大盤，進進出出37次但只贏大盤140點</p>
+<p>比較同期大盤，進進出出共71次，同期贏大盤5959點，幾乎贏一倍</p>
 <p><img src="../../images/post/post-3-3.png" alt="image"></p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="list">List</h5>
-<ol>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-</ol>
-<h5 id="unordered-list">Unordered List</h5>
+<h6 id="2-只看10日線">2. 只看10日線</h6>
+<p>當天收盤跌破10日線就空，收盤站上回補，收盤如果站上10日線，隔天開盤買，跌破收盤賣掉</p>
+<p>同時間點 :</p>
 <ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>大盤累積獲利:5404</li>
+<li>策略二累積:7610</li>
+<li>進出次數:125</li>
+<li>第一次買進時間:2021-09-17</li>
+<li>最後一次賣出時間:2024-10-09</li>
 </ul>
+<p>比較同期大盤，進進出出共125次，同期贏大盤2206點，表現沒有用小外資當指標來的好。</p>
+<p><img src="../../images/post/post-3-4.png" alt="image"></p>
+<h6 id="3-只看10日線改良">3. 只看10日線(改良)</h6>
+<p>與第2點策略相同，但台指期在季線之上(60日)不做空，只做多</p>
+<p>同時間點 :</p>
+<ul>
+<li>大盤累積獲利:5405</li>
+<li>策略三累積:9337</li>
+<li>進出次數:91</li>
+<li>第一次買進時間:2021-09-28</li>
+<li>最後一次賣出時間:2024-10-08</li>
+</ul>
+<p>比較同期大盤，進進出出共91次，同期贏大盤3932點，顯示季線之上部做空是比較好的選擇，但表現仍然沒有比用小外資當指標來的好。</p>
+<p><img src="../../images/post/post-3-5.png" alt="image"></p>
+<h6 id="4-小外資改良版10日線">4. 小外資改良版10日線</h6>
+<p>延伸策略3的多空點位，並且增加小外資判斷方向。</p>
+<p>判斷買進時查看當日的小外資是否為正，隔日開盤買，賣出時跌破十日線當天判斷前日小外資是否為負</p>
+<p>判斷賣出時查看前日的小外資是否為負，尾盤跌破十日線空，回補則看尾盤有沒有站回10日線且前一日小外資翻正。</p>
+<ul>
+<li>大盤累積獲利:4701</li>
+<li>策略四累積:13569</li>
+<li>進出次數:25</li>
+<li>第一次買進時間:2022-01-26</li>
+<li>最後一次賣出時間:2024-09-30</li>
+</ul>
+<p>比較同期大盤，進出筆數大幅縮短到25次，且同期贏大盤9049點，顯示小外資和10日線兩個重要的濾網可以帶來最多的報酬</p>
+<p><img src="../../images/post/post-3-6.png" alt="image"></p>
 <!-- raw HTML omitted -->
-<h5 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h5>
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python syntax highlighting&#34;</span>
-</span></span><span style="display:flex;"><span>print s
-</span></span></code></pre></div><pre tabindex="0"><code>No language indicated, so no syntax highlighting.
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre><!-- raw HTML omitted -->
-<h5 id="blockquote">Blockquote</h5>
-<blockquote>
-<p>This is a blockquote example.</p>
-</blockquote>
-<!-- raw HTML omitted -->
-<h5 id="inline-html">Inline HTML</h5>
-<p>You can also use raw HTML in your Markdown, and it&rsquo;ll mostly work pretty well.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="tables">Tables</h5>
-<p>Colons can be used to align columns.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Tables</th>
-          <th style="text-align: center">Are</th>
-          <th style="text-align: right">Cool</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>col 3 is</td>
-          <td style="text-align: center">right-aligned</td>
-          <td style="text-align: right">$1600</td>
-      </tr>
-      <tr>
-          <td>col 2 is</td>
-          <td style="text-align: center">centered</td>
-          <td style="text-align: right">$12</td>
-      </tr>
-      <tr>
-          <td>zebra stripes</td>
-          <td style="text-align: center">are neat</td>
-          <td style="text-align: right">$1</td>
-      </tr>
-  </tbody>
-</table>
-<p>There must be at least 3 dashes separating each header cell.
-The outer pipes (|) are optional, and you don&rsquo;t need to make the
-raw Markdown line up prettily. You can also use inline Markdown.</p>
-<table>
-  <thead>
-      <tr>
-          <th>Markdown</th>
-          <th>Less</th>
-          <th>Pretty</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><em>Still</em></td>
-          <td><code>renders</code></td>
-          <td><strong>nicely</strong></td>
-      </tr>
-      <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-      </tr>
-  </tbody>
-</table>
-<!-- raw HTML omitted -->
-<h5 id="image">Image</h5>
-<p><img src="../../images/post/post-1.jpg" alt="image"></p>
-<!-- raw HTML omitted -->
-<h5 id="youtube-video">Youtube video</h5>
-
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/C0DPdy98e4c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
 
         </div>
 
