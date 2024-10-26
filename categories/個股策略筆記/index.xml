@@ -6,21 +6,21 @@
     <description>Recent content in 個股策略筆記 on 雞笑恐龍</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mulderfang.github.io/categories/%E5%80%8B%E8%82%A1%E7%AD%96%E7%95%A5%E7%AD%86%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RS短波段選股策略</title>
+      <link>https://mulderfang.github.io/blog/post-2/</link>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://mulderfang.github.io/blog/post-2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;一甚麼是rs&#34;&gt;(一)甚麼是RS&lt;/h5&gt;&#xA;&lt;p&gt;RS全名是相對強度（Relative Strength），是超級績效作者Mark Minervini觀察的指標，他希望買進的股票RS Ranking(過去52週表現)不低於70，意思就是說過去52周內，這支股票要比全市場的70%股票表現都要來的好。&#xA;RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數高就一定PR值高，也不一定考很爛就一定不好，還是要看最後的總排名。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>剛上市櫃股票</title>
       <link>https://mulderfang.github.io/blog/post-1/</link>
       <pubDate>Sun, 15 Sep 2024 00:00:00 +0000</pubDate>
       <guid>https://mulderfang.github.io/blog/post-1/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;一-策略發想&#34;&gt;(一) 策略發想&lt;/h5&gt;&#xA;&lt;p&gt;不管是&lt;strong&gt;直接上市櫃&lt;/strong&gt;還是&lt;strong&gt;興櫃轉上市&lt;/strong&gt;，前五天皆無一般台股的漲跌幅限制。所以時常有新聞所謂的&lt;strong&gt;蜜月行情&lt;/strong&gt;，意氣風發上市後假設跌到爛掉想必公司對投資人不好交代，因此剛上市櫃試著站在買方試試看。&#xA;不過實際狀況還是要看承銷商的力道夠不夠，以及上市時的市場氛圍。&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;二-回測條件&#34;&gt;(二) 回測條件&lt;/h5&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;回測時間：2020年6月到2024年10月&lt;/li&gt;&#xA;&lt;li&gt;回測股票：新上市櫃股票&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;三-統計資料介紹&#34;&gt;(三) 統計資料介紹&lt;/h5&gt;&#xA;&lt;p&gt;手邊資料第一次買進(2021-01-08)到截至目前統計(2024-10-09)，總共156筆交易，排除幾支無流動性股票(開盤即收盤的幾支股票)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>RS短波段選股策略</title>
-      <link>https://mulderfang.github.io/blog/post-2/</link>
-      <pubDate>Sun, 01 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/blog/post-2/</guid>
-      <description>&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;&#xA;&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;&#xA;&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;一甚麼是rs&#34;&gt;(一)甚麼是RS&lt;/h5&gt;&#xA;&lt;p&gt;RS全名是相對強度（Relative Strength），是超級績效作者Mark Minervini觀察的指標，他希望買進的股票RS Ranking(過去52週表現)不低於70，意思就是說過去52周內，這支股票要比全市場的70%股票表現都要來的好。&#xA;RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數高就一定PR值高，也不一定考很爛就一定不好，還是要看最後的總排名。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

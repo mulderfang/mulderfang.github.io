@@ -134,79 +134,230 @@
           <span>By 雞笑恐龍</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
-          <span>2024-09-01</span>
+          <span>2024-10-15</span>
           
         </div>
         
         <img src="https://mulderfang.github.io/images/featured-post/post-2.png" class="img-fluid w-100 mb-4" alt="RS短波段選股策略">
         
         <div class="content mb-5">
-          <h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<!-- raw HTML omitted -->
+          <!-- raw HTML omitted -->
 <h5 id="一甚麼是rs">(一)甚麼是RS</h5>
 <p>RS全名是相對強度（Relative Strength），是超級績效作者Mark Minervini觀察的指標，他希望買進的股票RS Ranking(過去52週表現)不低於70，意思就是說過去52周內，這支股票要比全市場的70%股票表現都要來的好。
 RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數高就一定PR值高，也不一定考很爛就一定不好，還是要看最後的總排名。</p>
 <h5 id="二-策略發想">(二) 策略發想</h5>
-<p>有許多策略探討盤整後第一根紅K突破，但實際回測發現這樣其實有許多假突破的可能，或是後繼無力，這時候比較尷尬的就是要繼續等待還是離開。因此本策略改變想法，找60RS(60日的RS排名)，以及240RS要維持在高檔，但是近期(20RS排名)從低點瞬間拉升。意思就是這支股票還是強勢股，只是最近回檔休息，休息完後再次發動。</p>
-<p>RS指標 <a href="https://blog.growin.tv/super-performance-account/">RS指標</a></p>
-<h5 id="二-輕重緩急">(二) 輕重緩急</h5>
-<p>從量價量價關係發現，量比20日少的 然後是量比60日少的，表現都更好。</p>
-<!-- raw HTML omitted -->
-<h5 id="link">Link</h5>
-<p><a href="https://www.google.com">I&rsquo;m an inline-style link</a></p>
-<p><a href="https://www.google.com" title="Google's Homepage">I&rsquo;m an inline-style link with title</a></p>
-<p><a href="https://www.mozilla.org">I&rsquo;m a reference-style link</a></p>
-<p><a href="../blob/master/LICENSE">I&rsquo;m a relative reference to a repository file</a></p>
-<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
-<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
-<p>URLs and URLs in angle brackets will automatically get turned into links.
-<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> and sometimes
-example.com (but not on Github, for example).</p>
-<p>Some text to show that the reference links can follow later.</p>
-<!-- raw HTML omitted -->
-<h5 id="paragraph">Paragraph</h5>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus, facilis placeat pariatur! Voluptatem, sed harum pariatur adipisci voluptates voluptatum cumque, porro sint minima similique magni perferendis fuga! Optio vel ipsum excepturi tempore reiciendis id quidem? Vel in, doloribus debitis nesciunt fugit sequi magnam accusantium modi neque quis, vitae velit, pariatur harum autem a! Velit impedit atque maiores animi possimus asperiores natus repellendus excepturi sint architecto eligendi non, omnis nihil. Facilis, doloremque illum. Fugit optio laborum minus debitis natus illo perspiciatis corporis voluptatum rerum laboriosam.</p>
-<!-- raw HTML omitted -->
-<h5 id="list">List</h5>
-<ol>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-</ol>
-<h5 id="unordered-list">Unordered List</h5>
+<p>有許多策略探討盤整後第一根紅K突破，但實際回測發現這樣其實有許多假突破的可能，或是後繼無力，這時候比較尷尬的就是要繼續等待還是離開。因此本策略改變想法，找60RS(60日的RS排名)，以及240RS要維持在高檔，但是近期(20RS排名)從低點瞬間拉升。意思就是這支股票還是強勢股，只是最近回檔休息，休息完後再次發動。
+RS指標 <a href="https://blog.growin.tv/super-performance-account/">RS指標</a></p>
+<h5 id="三-回測結果">(三) 回測結果</h5>
 <ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>RS條件一 20日的RS RANK從小於15急拉大於52</li>
+<li>RS條件二 60日的RS RANK大於90</li>
+<li>RS條件三 240日的RS RANK大於90</li>
+<li>其他條件 量不要太小，離前高不要太遠(跌太深壓力重重)等等</li>
 </ul>
-<!-- raw HTML omitted -->
-<h5 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h5>
-<p>Inline <code>code</code> has <code>back-ticks around</code> it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;JavaScript syntax highlighting&#34;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">s</span>);
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Python syntax highlighting&#34;</span>
-</span></span><span style="display:flex;"><span>print s
-</span></span></code></pre></div><pre tabindex="0"><code>No language indicated, so no syntax highlighting. 
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre><!-- raw HTML omitted -->
-<h5 id="blockquote">Blockquote</h5>
-<blockquote>
-<p>This is a blockquote example.</p>
-</blockquote>
-<!-- raw HTML omitted -->
-<h5 id="inline-html">Inline HTML</h5>
-<p>You can also use raw HTML in your Markdown, and it&rsquo;ll mostly work pretty well.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p>從2021年6月至2024年9月一共交易51筆，平均報酬率為17.23%。</p>
+<h5 id="四-輕重緩急">(四) 輕重緩急</h5>
+<h6 id="1天量見天價">1.天量見天價</h6>
+<p>從量價量價關係發現，量比20日少的 然後是量比60日少的，表現都更好。
+如果篩選股票當天的成交量過大，後續成長就沒有這麼好。
+可能可以理解成，如果當日成交量就大於20日平均成交量，代表今天的量已經比過去股價很熱的時候那段還要多人參與，可能就有點太過熱。</p>
+<p>將表現較差的量比20日大檔數移除後可以明顯減少持倉檔數，增加資金使用效率。
+<img src="../../images/post/post-2-1.png" alt="image"></p>
+<h6 id="2囂張沒有落魄的久">2.囂張沒有落魄的久</h6>
+<p>篩選當天如果收盤已經漲9%以上，就不要追了，會讓自己成本墊高。
+觀察篩選後隔天及後天，如果後兩天都有明顯的大漲(大於9%)，後續如果有轉弱就可以動態停利了</p>
+<ul>
+<li>篩選當天表現及最後平均報酬率</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>漲的趴數</th>
+          <th>檔數</th>
+          <th>最後出場報酬率平均</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>22</td>
+          <td>12.04%</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>17</td>
+          <td>8.76%</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>12</td>
+          <td>9.06%</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>9</td>
+          <td>9.41%</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>10.61%</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>9.48%</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>10.55%</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>3</td>
+          <td>10.03%</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>2</td>
+          <td>6.56%</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>1</td>
+          <td><strong>-4.87%</strong></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>篩選隔天表現及最後平均報酬率</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>漲的趴數</th>
+          <th>檔數</th>
+          <th>最後出場報酬率平均</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>22</td>
+          <td>16.71%</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>17</td>
+          <td>21.22%</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>12</td>
+          <td>24.48%</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>9</td>
+          <td>25.62%</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>32.43%</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>32.43%</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>38.41%</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>3</td>
+          <td>14.83%</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>2</td>
+          <td><strong>-7.62%</strong></td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>1</td>
+          <td><strong>-13.63%</strong></td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>篩選第三天表現及最後平均報酬率</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>漲的趴數</th>
+          <th>檔數</th>
+          <th>最後出場報酬率平均</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>22</td>
+          <td>14.0%</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>17</td>
+          <td>10.73%</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>12</td>
+          <td>10.88%</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>9</td>
+          <td>8.58%</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>6</td>
+          <td>8.16%</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>5.67%</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>5</td>
+          <td>9.62%</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>3</td>
+          <td><strong>-1.03%</strong></td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>2</td>
+          <td>無數據</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>1</td>
+          <td>無數據</td>
+      </tr>
+  </tbody>
+</table>
 <!-- raw HTML omitted -->
 
         </div>
