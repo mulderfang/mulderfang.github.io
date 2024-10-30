@@ -6,8 +6,15 @@
     <description>Recent content on 雞笑恐龍</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mulderfang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>買賣權未平倉量比率</title>
+      <link>https://mulderfang.github.io/blog/post-5/</link>
+      <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://mulderfang.github.io/blog/post-5/</guid>
+      <description>&lt;h5 id=&#34;一-觀察大盤指標&#34;&gt;(一) 觀察大盤指標&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日漲跌幅個數與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;觀察每日漲跌幅個數與大盤的關聯，用上漲個數減去下跌隔數後計算總%數，其實彼此關聯性不高，畢竟資金會輪動，每天漲跌個股不一，可能要針對極值做討論比較有方向。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;小外資與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;小外資的運用在另一篇有介紹，這邊就當個比較圖。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-2.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PUT CALL RATIO與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;PUT CALL RATION是臺指選擇權契約未平倉的PUT口數除以CALL口數，這邊透過%數減100呈現彼此差距。put＝看跌；call＝看漲，但這邊呈現的是未平倉量，所以當這個比率越高時，其實就代表購買 put 未平倉的量＞購買 call 未平倉的量。反之亦然。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>短期RS大躍進選股策略</title>
       <link>https://mulderfang.github.io/blog/post-2/</link>
