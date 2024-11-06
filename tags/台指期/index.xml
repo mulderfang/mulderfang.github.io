@@ -13,7 +13,7 @@
       <link>https://mulderfang.github.io/blog/post-5/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://mulderfang.github.io/blog/post-5/</guid>
-      <description>&lt;h5 id=&#34;一-觀察大盤指標&#34;&gt;(一) 觀察大盤指標&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日漲跌幅個數與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;觀察每日漲跌幅個數與大盤的關聯，用上漲個數減去下跌隔數後計算總%數，其實彼此關聯性不高，畢竟資金會輪動，每天漲跌個股不一，可能要針對極值做討論比較有方向。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;小外資與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;小外資的運用在另一篇有介紹，這邊就當個比較圖。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-2.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PUT CALL RATIO與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;PUT CALL RATION是臺指選擇權契約未平倉的PUT口數除以CALL口數，這邊透過%數減100呈現彼此差距。put＝看跌；call＝看漲，但這邊呈現的是未平倉量，所以當這個比率越高時，其實就代表購買 put 未平倉的量＞購買 call 未平倉的量。反之亦然。&lt;/p&gt;</description>
+      <description>&lt;h5 id=&#34;一-觀察大盤指標&#34;&gt;(一) 觀察大盤指標&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日漲跌幅個數與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;觀察每日漲跌幅個數與大盤的關聯，用上漲個數減去下跌隔數後計算總%數，其實彼此關聯性不高，畢竟資金會輪動，每天漲跌個股不一，可能要針對極值做討論比較有方向。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ARMS阿姆斯指標&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;將每日漲跌幅改用ARMS阿姆斯指標，該指標是理查‧阿姆斯(Richard Arms)發明的，或者被稱之為買賣指標(Trading Index)。用來計算上漲股票與下跌股票的那一方擁有較大的成交量比重。除了單純的上漲下跌家家數外，還加入成交值作為判斷標準。一般來說ARMS指標都在3以下，如果ARMS指標在1以下代表行情在上升趨勢，大於1就表示下跌的成交比重大於上漲的。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-5.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>台指期多空點位</title>
