@@ -442,13 +442,85 @@ RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數�
 <p>可以發現2022年空頭年沒有損失，但是2023年大多頭整年的表現非常不及格，而2023符合此策略的股票不多且幾乎都集中在11月後，導致2022至2023年Q3前此策略幾乎沒表現。
 <img src="../../images/post/post-2-3.png" alt="image"></p>
 <ul>
-<li>維持只持倉一檔</li>
+<li>
+<p>賺賠比
+勝32筆，賠36筆，勝率只有47%，但是勝的時候平均可以賺32.42%，賠的時候只賠-4.60%，利用Ralph Vince提出的最佳化f (Optimal f)計算下注比例會發現，對應的最佳化 f 值是: 0.92，也就是說，這樣幾乎是每檔都應該要押到帳戶上限才對。因此將檔數從五檔調整為只持有一檔試試看。</p>
+</li>
+<li>
+<p>維持只持倉一檔</p>
+</li>
 </ul>
 <p>想法是如果符合條件的股票表現不錯的話，須讓整個策略走完買進賣出，因此每次只維持持倉一檔，待賣出後有訊號出現時再買下一檔，如果每日同時出現多檔，則挑選RS20 RANK漲幅最低的一檔(未來上檔空間較大)</p>
 <p>如下圖
 <img src="../../images/post/post-2-9.png" alt="image"></p>
-<p>從2021年到2024年底總共只交易了29筆，出手次數並不多，總累積報酬率可達444%</p>
+<p>從2021年到2024年底總共只交易了29筆，出手次數並不多，總累積報酬率可達444%
+勝12筆，賠17筆，勝率只有41%，但是勝的時候平均可以賺42%，賠的時候平均只賠-3%</p>
 <p><img src="../../images/post/post-2-10.png" alt="image"></p>
+<p>不過可以看到Sharpe ratio並沒有分散在五檔的時候這麼好，而且Max drawdown相當大，畢竟帳戶只有一檔股票，波動當然也會跟著變大。</p>
+<p>雖然績效看起來賺比較多，但夏普值沒有比較好，目前筆數還不是很多，可能要繼續觀察才會知道到底要配置幾檔比較好。</p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Annual return</strong></td>
+          <td><strong>100.714%</strong></td>
+      </tr>
+      <tr>
+          <td>Cumulative returns</td>
+          <td>1134.346%</td>
+      </tr>
+      <tr>
+          <td>Annual volatility</td>
+          <td>114.043%</td>
+      </tr>
+      <tr>
+          <td>Sharpe ratio</td>
+          <td>0.94</td>
+      </tr>
+      <tr>
+          <td>Calmar ratio</td>
+          <td>3.38</td>
+      </tr>
+      <tr>
+          <td>Stability</td>
+          <td>0.54</td>
+      </tr>
+      <tr>
+          <td><strong>Max drawdown</strong></td>
+          <td><strong>-29.821%</strong></td>
+      </tr>
+      <tr>
+          <td>Omega ratio</td>
+          <td>7.23</td>
+      </tr>
+      <tr>
+          <td>Sortino ratio</td>
+          <td>10.40</td>
+      </tr>
+      <tr>
+          <td>Skew</td>
+          <td>17.08</td>
+      </tr>
+      <tr>
+          <td>Kurtosis</td>
+          <td>319.83</td>
+      </tr>
+      <tr>
+          <td>Tail ratio</td>
+          <td>NaN</td>
+      </tr>
+      <tr>
+          <td>Daily value at risk</td>
+          <td>-13.942%</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="../../images/post/post-2-11.png" alt="image"></p>
 <h5 id="六-未來">(六) 未來</h5>
 <p>資金的配置仍然是一大挑戰，在程式沒有篩出個股時，以及同時間篩出太多個股，兩種情況皆會面臨資金分配的問題，需要針對策略做動態調整(若篩不到個股時閒置資金該如何處理)等等。</p>
 <p>目前從9月開始已針對程式選股嘗試零股投入，建立每日dash board監控策略進出，並透過實際交易找尋盲點並改進。
