@@ -135,90 +135,151 @@
         <img src="https://mulderfang.github.io/images/featured-post/post-5.png" class="img-fluid w-100 mb-4" alt="處置股策略">
         
         <div class="content mb-5">
-          <!-- raw HTML omitted -->
-<h5 id="一-策略發想">(一) 策略發想</h5>
-<p>俗話說<strong>越關越大尾</strong>，處置股往往就是市場上目前最飆的股票，以前遇到股票進處置往往會想要先跑，怕流動性被沒收會有風險，但很常發現處置期間股票根本不會跌，還有可能越關越大尾</p>
+          <h1 id="處置股策略">處置股策略</h1>
 <!-- raw HTML omitted -->
-<h5 id="二-回測條件">(二) 回測條件</h5>
+<hr>
+<h3 id="一-策略發想">(一) 策略發想</h3>
+<blockquote>
+<p><strong>俗話說：「越關越大尾」</strong><br>
+處置股往往是市場上最飆的股票。以往進入處置時，大家擔心流動性被限制帶來風險而提前賣出，但實際觀察卻發現處置期間的股票不僅不跌，甚至可能越關越大尾。</p>
+</blockquote>
+<hr>
+<h3 id="二-回測條件">(二) 回測條件</h3>
 <ol>
-<li>回測時間：2020年6月到2024年11月</li>
-<li>回測股票：處置股5分盤</li>
+<li><strong>回測時間</strong>：2020年6月到2024年11月</li>
+<li><strong>回測範圍</strong>：處置股（5分盤）</li>
 </ol>
-<!-- raw HTML omitted -->
-<h5 id="三-統計資料介紹">(三) 統計資料介紹</h5>
-<p>手邊資料第一次買進(2020-06-09的光洋科)到截至目前統計(2024-11-06買進的光聖)，</p>
-<p>總共584筆交易</p>
-<p>排除非強勢股(進處置前一天20日平均RS小於20)</p>
-<p>排除雞蛋水餃股(股價小於10)</p>
-<p>排除量太小的(20MA量小於1000)</p>
-<h5 id="四-回測結果優化">(四) 回測結果優化</h5>
+<hr>
+<h3 id="三-統計資料介紹">(三) 統計資料介紹</h3>
 <ul>
-<li>進處置第一天開盤收盤差異</li>
+<li><strong>交易期間</strong>：從 2020-06-09（光洋科）到 2024-11-06（光聖）</li>
+<li><strong>總交易次數</strong>：584筆</li>
 </ul>
-<p>進處置第一天流動性沒收後可能會因為恐慌而有潛在賣壓</p>
-<p>平均賠錢每檔賠 <strong>-4.25%</strong></p>
-<p>平均賺錢每檔賺 <strong>3.97%</strong></p>
-<p>勝率 <strong>38.86%</strong></p>
-<p>代表進處置第一天開盤馬上買進效果不好
+<h4 id="排除條件">排除條件：</h4>
+<ul>
+<li>非強勢股（進處置前一天 20 日平均 RS &lt; 20）</li>
+<li>股價 &lt; 10 的雞蛋水餃股</li>
+<li>20 日平均成交量 &lt; 1000</li>
+</ul>
+<hr>
+<h3 id="四-回測結果優化">(四) 回測結果優化</h3>
+<h4 id="1-進處置第一天開盤收盤差異">1. 進處置第一天開盤收盤差異</h4>
+<ul>
+<li><strong>平均賠錢</strong>：-4.25%</li>
+<li><strong>平均賺錢</strong>：3.97%</li>
+<li><strong>勝率</strong>：38.86%</li>
+</ul>
+<blockquote>
+<p><strong>結果</strong>：進處置第一天開盤馬上買進效果不佳<br>
 <img src="../../images/post/post-7-1.png" alt="image"></p>
+</blockquote>
+<h4 id="2-出處置前一天開盤收盤差異">2. 出處置前一天開盤收盤差異</h4>
 <ul>
-<li>出處置前一天開盤收盤差異</li>
+<li><strong>平均賠錢</strong>：-4.07%</li>
+<li><strong>平均賺錢</strong>：4.55%</li>
+<li><strong>勝率</strong>：50.53%</li>
 </ul>
-<p>進處置第一天流動性沒收後可能會因為恐慌而有潛在賣壓</p>
-<p>平均賠錢每檔賠 <strong>-4.07%</strong></p>
-<p>平均賺錢每檔賺 <strong>4.55%</strong></p>
-<p>勝率 <strong>50.53%</strong></p>
-<p>代表出處置前一天其實股價變化不大
+<blockquote>
+<p><strong>結果</strong>：出處置前一天股價變化不大<br>
 <img src="../../images/post/post-7-3.png" alt="image"></p>
+</blockquote>
+<h4 id="3-出處置第一天開盤收盤差異">3. 出處置第一天開盤收盤差異</h4>
 <ul>
-<li>出處置第一天開盤收盤差異</li>
+<li><strong>平均賠錢</strong>：-5.08%</li>
+<li><strong>平均賺錢</strong>：4.59%</li>
+<li><strong>勝率</strong>：41.01%</li>
 </ul>
-<p>出處置第一天股性都會相對活潑，但流動性回來可能會有一些操作處置股的人開始獲利了結。</p>
-<p>平均賠錢每檔賠 <strong>-5.08%</strong></p>
-<p>平均賺錢每檔賺 <strong>4.59%</strong></p>
-<p>勝率 <strong>41.01%</strong></p>
-<p>代表出處置後第一天收盤才賣出效果也不好
+<blockquote>
+<p><strong>結果</strong>：出處置後第一天收盤賣出效果不佳<br>
 <img src="../../images/post/post-7-2.png" alt="image"></p>
+</blockquote>
+<h4 id="4-進處置第一天開盤收盤差異過大">4. 進處置第一天開盤收盤差異過大</h4>
+<p>若進處置第一天跌幅超過 10%，後續表現更差，平均虧損達 -2.71%。<br>
+<img src="../../images/post/post-7-4.png" alt="image"></p>
+<hr>
+<h3 id="五-重新統計">(五) 重新統計</h3>
+<p><strong>策略條件：</strong></p>
 <ul>
-<li>進處置第一天開盤收盤差異過大</li>
+<li><strong>買進</strong>：進處置第一天收盤即買進</li>
+<li><strong>賣出</strong>：出處置前一天收盤賣出</li>
+<li><strong>篩選條件</strong>：
+<ol>
+<li>進處置前一天的 20 日 RS &gt; 20</li>
+<li>進處置前一天需收紅</li>
+<li>進處置第一天跌幅 &lt; 10%</li>
+</ol>
+</li>
 </ul>
-<p>若是進處置第一天跌幅大於10%，觀察後續表現也同樣不好，最後平均會虧-2.71%</p>
-<p><img src="../../images/post/post-7-4.png" alt="image"></p>
+<h4 id="統計結果">統計結果：</h4>
 <ul>
-<li>重新統計資料</li>
+<li><strong>平均賠錢</strong>：-7.91%</li>
+<li><strong>平均賺錢</strong>：15.91%</li>
+<li><strong>勝率</strong>：60.33%<br>
+<img src="../../images/post/post-7-5.png" alt="image"></li>
 </ul>
-<p><strong>買進 : 進處置第一天收盤即買進</strong>
-<strong>賣出 : 出處置前一天收盤賣出</strong></p>
+<hr>
+<h4 id="1-mae累計圖分析">1. MAE累計圖分析</h4>
+<blockquote>
+<p>透過 <strong>MAE累計圖</strong> 可發現：<br>
+如果 MAE 超過 <strong>-15%</strong>，之後基本上不會再賺錢，因此可以即早停損，提升資金使用效率。</p>
+</blockquote>
 <ul>
-<li>進處置前一天的20日RS需大於20</li>
-<li>進處置前一天需要收紅</li>
-<li>進處置第一天的跌幅需小於10%</li>
+<li><strong>平均賠錢</strong>：-8.18%</li>
+<li><strong>平均賺錢</strong>：15.93%</li>
+<li><strong>勝率</strong>：60%</li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>平均賠錢每檔賠 <strong>-7.91%</strong></p>
-<p>平均賺錢每檔賺 <strong>15.91%</strong></p>
-<p>勝率 <strong>60.33%</strong>
-<img src="../../images/post/post-7-5.png" alt="image"></p>
+<p>即便進行停損，勝率僅略有下降。然而，如果不加篩選全部買進，仍可能導致操作標的過多。<br>
+<img src="../../images/post/post-7-6.png" alt="image"><br>
+<img src="../../images/post/post-7-7.png" alt="image"></p>
+<hr>
+<h4 id="2-與5ma線的距離">2. 與5MA線的距離</h4>
+<p>回測發現，進處置前一天若乖離 <strong>五日均線（5MA）</strong> 太多或太少，後續表現均不理想：</p>
 <ul>
-<li>MAE累計圖</li>
+<li><strong>乖離過大</strong>：可能已用盡最後的波紋導致表現不佳。</li>
+<li><strong>乖離過小</strong>：可能缺乏原本就不夠強勢。</li>
 </ul>
-<p>透過MAE累計圖可以發現其實如果MAE-15%以上，之後基本上就不會賺錢了，可以即早停損增加資金使用效率</p>
-<p><img src="../../images/post/post-7-6.png" alt="image"></p>
-<p>平均賠錢每檔賠 <strong>-8.18%</strong></p>
-<p>平均賺錢每檔賺 <strong>15.93%</strong></p>
-<p>勝率 <strong>60%</strong></p>
-<p>基本上停損後勝率只有略為下降，不過若是全部都要買進的還是太多檔</p>
-<p><img src="../../images/post/post-7-7.png" alt="image"></p>
-<h5 id="六-現實考量">(六) 現實考量</h5>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="七-結論">(七) 結論</h5>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<h5 id="八-連結">(八) 連結</h5>
-<p>可以透過以下網站追蹤目前上市櫃處置股 <a href="https://www.twse.com.tw/zh/announcement/punish.html">上市處置股</a> <a href="https://www.tpex.org.tw/zh-tw/announce/market/disposal.html">上櫃處置股</a></p>
-<!-- raw HTML omitted -->
+<p>因此設定額外篩選條件：</p>
+<blockquote>
+<p><strong>處置前一日距離五日線須介於 5% 至 15% 之間。</strong></p>
+</blockquote>
+<h4 id="優化結果">優化結果：</h4>
+<ul>
+<li><strong>平均賠錢</strong>：-6.71%</li>
+<li><strong>平均賺錢</strong>：15.97%</li>
+<li><strong>勝率</strong>：66.29%</li>
+<li><strong>總交易筆數</strong>：183筆<br>
+<img src="../../images/post/post-7-8.png" alt="image"></li>
+</ul>
+<p>同時，優化後每日平均持有檔數下降，平均持倉剩 <strong>2檔</strong>，進一步提升資金效益。<br>
+<img src="../../images/post/post-7-9.png" alt="image"></p>
+<hr>
+<p><strong>備註：</strong>
+另有 2 筆進處置時股價低於 <strong>年線（240MA）</strong> 的交易記錄，後續表現同樣不佳，但樣本數不足，需進一步觀察。
+<img src="../../images/post/post-7-10.png" alt="image"></p>
+<h3 id="六-現實考量">(六) 現實考量</h3>
+<ol>
+<li><strong>胃納量問題</strong>
+<ul>
+<li>處置股流動性差，即使報酬率不錯，資金可能無法有效放大。</li>
+</ul>
+</li>
+<li><strong>資金效益問題</strong>
+<ul>
+<li>事件交易可能導致資金閒置，需考慮其他孳息機會。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="七-結論">(七) 結論</h3>
+<p>此策略具備高勝率與優秀賺賠比（超過 2:1）。雖然有胃納量與資金效益的限制，但作為事件交易選擇，期望值表現優秀。</p>
+<hr>
+<h3 id="八-相關連結">(八) 相關連結</h3>
+<p>透過以下網站追蹤目前上市櫃處置股：</p>
+<ul>
+<li><a href="https://www.twse.com.tw/zh/announcement/punish.html">上市處置股</a></li>
+<li><a href="https://www.tpex.org.tw/zh-tw/announce/market/disposal.html">上櫃處置股</a></li>
+</ul>
+<hr>
 
         </div>
 
