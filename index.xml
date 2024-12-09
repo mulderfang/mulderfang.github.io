@@ -16,18 +16,18 @@
       <description>&lt;h1 id=&#34;處置股策略&#34;&gt;處置股策略&lt;/h1&gt;&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;一-策略發想&#34;&gt;(一) 策略發想&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;俗話說：「越關越大尾」&lt;/strong&gt;&lt;br&gt;&#xA;處置股往往是市場上最飆的股票。以往進入處置時，大家擔心流動性被限制帶來風險而提前賣出，但實際觀察卻發現處置期間的股票不僅不跌，甚至可能越關越大尾。&lt;/p&gt;</description>
     </item>
     <item>
+      <title>短期RS大躍進選股策略</title>
+      <link>https://mulderfang.github.io/blog/post-2/</link>
+      <pubDate>Thu, 31 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://mulderfang.github.io/blog/post-2/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;一甚麼是rs&#34;&gt;(一)甚麼是RS&lt;/h5&gt;&#xA;&lt;p&gt;RS全名是相對強度（Relative Strength），是超級績效作者Mark Minervini觀察的指標，根據他的說法「我絕大多數的績效來自於 RS 90 以上的股票，買進的股票 RS 最低不能小於 70」。他希望買進的股票RS Ranking(過去52週表現)不低於70，意思就是說過去52周內，這支股票要比全市場的70%股票表現都要來的好。&#xA;RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數高就一定PR值高，也不一定考很爛就一定不好，還是要看大盤所有股票的表現。&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>買賣權未平倉量比率</title>
       <link>https://mulderfang.github.io/blog/post-5/</link>
       <pubDate>Wed, 30 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://mulderfang.github.io/blog/post-5/</guid>
       <description>&lt;h5 id=&#34;一-觀察大盤指標&#34;&gt;(一) 觀察大盤指標&lt;/h5&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;每日漲跌幅個數與大盤的關聯&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;觀察每日漲跌幅個數與大盤的關聯，用上漲個數減去下跌隔數後計算總%數，其實彼此關聯性不高，畢竟資金會輪動，每天漲跌個股不一，可能要針對極值做討論比較有方向。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/post/post-5-1.png&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;ARMS阿姆斯指標&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;將每日漲跌幅改用ARMS阿姆斯指標，該指標是理查‧阿姆斯(Richard Arms)發明的，或者被稱之為買賣指標(Trading Index)。用來計算上漲股票與下跌股票的那一方擁有較大的成值比重。除了單純的上漲下跌家家數外，還加入成交值作為判斷標準。一般來說ARMS指標都在3以下，如果ARMS指標在1以下代表行情在上升趨勢，大於1就表示下跌的成交比重大於上漲的。&lt;/p&gt;&#xA;&lt;p&gt;如果單純抓大於3的時間點作為買賣標準其實沒有甚麼明顯趨勢，或許要搭配別的指標一起看比較好&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>短期RS大躍進選股策略</title>
-      <link>https://mulderfang.github.io/blog/post-2/</link>
-      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://mulderfang.github.io/blog/post-2/</guid>
-      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;h5 id=&#34;一甚麼是rs&#34;&gt;(一)甚麼是RS&lt;/h5&gt;&#xA;&lt;p&gt;RS全名是相對強度（Relative Strength），是超級績效作者Mark Minervini觀察的指標，根據他的說法「我絕大多數的績效來自於 RS 90 以上的股票，買進的股票 RS 最低不能小於 70」。他希望買進的股票RS Ranking(過去52週表現)不低於70，意思就是說過去52周內，這支股票要比全市場的70%股票表現都要來的好。&#xA;RS的數字從0-100，有點像是考學測的PR值一樣，不一定你分數高就一定PR值高，也不一定考很爛就一定不好，還是要看大盤所有股票的表現。&lt;/p&gt;</description>
     </item>
     <item>
       <title>個股分析-智崴(5263)</title>
